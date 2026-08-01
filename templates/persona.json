@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "your-character",
+  "displayName": "Your Character",
+  "description": {
+    "en": "A short English description.",
+    "zhTW": "簡短的繁體中文說明。"
+  },
+  "author": {
+    "name": "Your name",
+    "github": "@your-github-name"
+  },
+  "sourceType": "original-ai",
+  "license": "CC-BY-4.0",
+  "attribution": "Your Character by Your Name, licensed under CC BY 4.0.",
+  "ai": {
+    "generated": true,
+    "tool": "Name of the generation tool"
+  },
+  "assets": {
+    "preview": "preview.png",
+    "spritesheet": "spritesheet.png"
+  },
+  "sprite": {
+    "layout": "4x6",
+    "width": 1024,
+    "height": 1536,
+    "columns": 4,
+    "rows": 6
+  },
+  "rights": {
+    "ownerOrAuthorized": true,
+    "originalCharacter": true,
+    "noThirdPartyIP": true,
+    "redistributionAllowed": true
+  }
+}

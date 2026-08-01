@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: GitHub DMCA process / GitHub 正式 DMCA 程序
+    url: https://docs.github.com/en/site-policy/content-removal-policies/guide-to-submitting-a-dmca-takedown-notice
+    about: Use GitHub's official process for a formal copyright notice.

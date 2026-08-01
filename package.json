@@ -1,0 +1,14 @@
+{
+  "name": "ai-face-personas",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Validated community persona packs for AI FACE",
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "validate": "node scripts/validate-personas.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

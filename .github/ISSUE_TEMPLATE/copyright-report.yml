@@ -1,0 +1,43 @@
+name: Copyright concern / 版權疑慮
+description: Report a specific persona file that may contain unauthorized content.
+title: "[Copyright] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not post private addresses, phone numbers, identity documents, contracts, or other sensitive information here.
+
+        請勿在公開 Issue 張貼地址、電話、身分文件、合約或其他敏感資訊。
+  - type: input
+    id: file-url
+    attributes:
+      label: Exact GitHub file URL / 精確檔案網址
+      placeholder: https://github.com/page5888/AI-FACE-Personas/blob/main/personas/...
+    validations:
+      required: true
+  - type: input
+    id: original-work
+    attributes:
+      label: Original work or rights holder / 原作品或權利人
+    validations:
+      required: true
+  - type: input
+    id: public-source
+    attributes:
+      label: Public supporting source / 可公開查證來源
+      description: Do not include private documents.
+    validations:
+      required: true
+  - type: textarea
+    id: concern
+    attributes:
+      label: Concern / 疑慮說明
+    validations:
+      required: true
+  - type: checkboxes
+    id: acknowledgement
+    attributes:
+      label: Acknowledgement / 確認
+      options:
+        - label: I understand this public issue is an informal maintainer report, not a formal DMCA notice. / 我了解公開 Issue 只是維護者初步檢查，不是正式 DMCA 通知。
+          required: true
