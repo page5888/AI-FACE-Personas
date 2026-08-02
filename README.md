@@ -3,6 +3,10 @@
   <a href="./README.zh-TW.md">繁體中文</a>
 </p>
 
+<p align="center">
+  <a href="https://page5888.github.io/AI-FACE-Personas/">Public website</a>
+</p>
+
 # AI FACE Personas
 
 Community character packs for [AI FACE](https://github.com/page5888/AI-FACE).

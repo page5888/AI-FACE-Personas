@@ -3,6 +3,10 @@
   <strong>繁體中文</strong>
 </p>
 
+<p align="center">
+  <a href="https://page5888.github.io/AI-FACE-Personas/">公開網站</a>
+</p>
+
 # AI FACE 角色庫
 
 這是 [AI FACE](https://github.com/page5888/AI-FACE) 的社群角色投稿倉庫。
