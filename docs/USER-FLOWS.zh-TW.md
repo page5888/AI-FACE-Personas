@@ -26,21 +26,25 @@ Pull Request 或 Sprite Sheet，就能知道產品是什麼以及如何開始使
 
 ## 1. 一般使用者流程
 
-### 目前可用：內部試用版
+### 目前可用：可下載的 Phase 6 預覽版
 
 ```text
-建置並以開發人員模式載入擴充功能
+開啟 AI FACE 公開網站
+→ 下載 AI-FACE-Preview.zip
+→ 解壓縮 ZIP
+→ 開啟 chrome://extensions
+→ 啟用開發人員模式
+→ 點選「載入未封裝項目」並選擇包含 manifest.json 的資料夾
 → 開啟或重新整理 ChatGPT
 → Haruna 自動出現
-→ 開啟 AI FACE Popup
-→ 選擇九個內建角色之一，或匯入一個本機自訂角色
-→ 需要時由使用者主動開始語音同步
-→ 移動、縮放、鎖定、隱藏、重設或開啟置頂模式
+→ 從 AI FACE 擴充功能按鈕選擇 Haruna、Miu 或 Nova
 ```
 
-目前仍需使用開發人員模式安裝，尚未提供 Chrome Web Store 一鍵安裝。
+目前的預覽版已不需要 GitHub、Node.js、終端機或自行建置原始碼。由於尚未
+上架 Chrome Web Store，仍需透過 Chrome 開發人員模式安裝。語音同步、版面控制
+及其他預覽功能仍依 AI FACE 文件所述權限與使用者主動操作執行。
 
-### 規劃中：公開版無摩擦流程
+### 規劃中：Chrome Web Store 流程
 
 ```text
 開啟 AI FACE 官網

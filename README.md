@@ -13,6 +13,19 @@ Community character packs for [AI FACE](https://github.com/page5888/AI-FACE).
 
 New here? Read the complete [user, submission, voting, and copyright flows](./docs/USER-FLOWS.md).
 
+## Install the current preview
+
+You do not need GitHub, Node.js, Terminal, or a source build.
+
+1. [Download AI FACE Preview](./docs/downloads/AI-FACE-Preview.zip).
+2. Right-click the ZIP and select **Extract All**.
+3. Open `chrome://extensions` in Chrome.
+4. Turn on **Developer mode** in the upper-right corner.
+5. Select **Load unpacked**, then choose the extracted folder that directly contains `manifest.json`.
+6. Open or refresh [ChatGPT](https://chatgpt.com/). Haruna appears automatically; use the AI FACE extension button to choose Haruna, Miu, or Nova.
+
+This is a Phase 6 preview and is not yet published in the Chrome Web Store. After downloading an updated build, reload AI FACE on `chrome://extensions` and refresh the ChatGPT tab.
+
 > [!CAUTION]
 > **Do not upload copyrighted characters or images you do not own.**
 > Submissions containing anime, game, movie, celebrity, brand, logo, downloaded artwork, screenshots, or other third-party intellectual property will be rejected and may be removed without notice.

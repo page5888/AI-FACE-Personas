@@ -26,30 +26,34 @@ need to understand repositories, manifests, pull requests, or sprite sheets.
 
 ## 1. Ordinary user flow
 
-### Available now: internal trial
+### Available now: downloadable Phase 6 preview
 
 ```text
-Build and load the unpacked extension
-? Open or refresh ChatGPT
-? Haruna appears automatically
-? Open the AI FACE popup
-? Choose one of nine built-in characters or import one local custom character
-? Optionally start voice sync through an explicit user action
-? Move, resize, lock, hide, reset, or open always-on-top mode
+Open the public AI FACE website
+→ Download AI-FACE-Preview.zip
+→ Extract the ZIP
+→ Open chrome://extensions
+→ Enable Developer mode
+→ Select Load unpacked and choose the folder containing manifest.json
+→ Open or refresh ChatGPT
+→ Haruna appears automatically
+→ Choose Haruna, Miu, or Nova from the AI FACE extension button
 ```
 
-The current trial requires developer-mode installation. It is not yet a
-one-click Chrome Web Store installation.
+The current preview no longer requires GitHub, Node.js, Terminal, or a source
+build. It still uses Chrome Developer mode because it is not yet published in
+the Chrome Web Store. Voice sync, layout controls, and other preview behavior
+still require the permissions and explicit user actions documented by AI FACE.
 
-### Planned: public no-friction flow
+### Planned: Chrome Web Store flow
 
 ```text
 Open the AI FACE website
-? Select Install AI FACE
-? Install from the Chrome Web Store
-? Open ChatGPT
-? Choose a character
-? Start using AI FACE
+→ Select Install AI FACE
+→ Install from the Chrome Web Store
+→ Open ChatGPT
+→ Choose a character
+→ Start using AI FACE
 ```
 
 An ordinary user must not need a GitHub account, source checkout, Node.js,

@@ -13,6 +13,19 @@
 
 第一次來？請先閱讀完整的[使用、投稿、投票與版權流程](./docs/USER-FLOWS.zh-TW.md)。
 
+## 安裝目前的預覽版
+
+不需要 GitHub、Node.js、終端機，也不用下載原始碼自行建置。
+
+1. [下載 AI FACE 預覽版](./docs/downloads/AI-FACE-Preview.zip)。
+2. 在 ZIP 上按右鍵，選擇**解壓縮全部**。
+3. 在 Chrome 網址列輸入 `chrome://extensions`。
+4. 開啟右上角的**開發人員模式**。
+5. 點選**載入未封裝項目**，選擇解壓縮後、直接包含 `manifest.json` 的資料夾。
+6. 開啟或重新整理 [ChatGPT](https://chatgpt.com/)；Haruna 會自動出現，並可從 AI FACE 擴充功能按鈕選擇 Haruna、Miu 或 Nova。
+
+目前是 Phase 6 預覽版，尚未上架 Chrome Web Store。下載新版後，請在 `chrome://extensions` 重新載入 AI FACE，再重新整理 ChatGPT 分頁。
+
 > [!CAUTION]
 > **請勿上傳你不擁有著作權的角色或圖片。**
 > 動漫、遊戲、電影、名人、品牌、Logo、網路下載圖片、截圖或其他第三方智慧財產內容，一律不接受，並可能不另行通知直接移除。

@@ -3,732 +3,142 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="AI FACE adds a local-first, voice-reactive character overlay to ChatGPT. Explore the extension and its reviewed community persona library."
-    />
+    <meta name="description" content="AI FACE adds a local-first, voice-reactive character beside ChatGPT. Download it for Chrome and start in four steps." />
     <meta name="theme-color" content="#070a12" />
-    <meta property="og:title" content="AI FACE — Give AI a presence" />
-    <meta
-      property="og:description"
-      content="A local-first Chrome companion for ChatGPT, plus a reviewed open community character library."
-    />
+    <meta property="og:title" content="AI FACE — Give ChatGPT a face" />
+    <meta property="og:description" content="A local-first Chrome companion with ready-to-use characters and voice-reactive motion." />
     <meta property="og:type" content="website" />
-    <title>AI FACE — Give AI a presence</title>
+    <title>AI FACE — Give ChatGPT a face</title>
     <link rel="icon" href="./assets/ai-face.png" />
     <link rel="stylesheet" href="./assets/site.css" />
     <script src="./assets/site.js" defer></script>
   </head>
   <body>
-    <a class="skip-link" href="#main">
-      <span data-copy="en">Skip to content</span>
-      <span data-copy="zh">跳至主要內容</span>
-    </a>
-
+    <a class="skip-link" href="#main"><span data-copy="en">Skip to content</span><span data-copy="zh">跳至主要內容</span></a>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="AI FACE home">
-        <img src="./assets/ai-face.png" alt="" width="42" height="42" />
-        <span>AI FACE</span>
-      </a>
-
+      <a class="brand" href="#top" aria-label="AI FACE home"><img src="./assets/ai-face.png" alt="" width="42" height="42" /><span>AI FACE</span></a>
       <nav class="site-nav" aria-label="Primary navigation">
-        <a href="#projects">
-          <span data-copy="en">Projects</span>
-          <span data-copy="zh">專案</span>
-        </a>
-        <a href="#start">
-          <span data-copy="en">Get started</span>
-          <span data-copy="zh">開始使用</span>
-        </a>
-        <a href="#characters">
-          <span data-copy="en">Characters</span>
-          <span data-copy="zh">角色</span>
-        </a>
-        <a href="#contribute">
-          <span data-copy="en">Contribute</span>
-          <span data-copy="zh">投稿</span>
-        </a>
+        <a href="#start"><span data-copy="en">Install</span><span data-copy="zh">安裝</span></a>
+        <a href="#features"><span data-copy="en">Features</span><span data-copy="zh">功能</span></a>
+        <a href="#characters"><span data-copy="en">Characters</span><span data-copy="zh">角色</span></a>
+        <a href="#privacy"><span data-copy="en">Privacy</span><span data-copy="zh">隱私</span></a>
       </nav>
-
       <div class="language-switch" aria-label="Language">
-        <button type="button" data-language-button="en" aria-pressed="true">
-          EN
-        </button>
-        <button type="button" data-language-button="zh" aria-pressed="false">
-          繁中
-        </button>
+        <button type="button" data-language-button="en" aria-pressed="true">EN</button>
+        <button type="button" data-language-button="zh" aria-pressed="false">繁中</button>
       </div>
     </header>
 
     <main id="main">
       <section class="hero" id="top">
         <div class="hero-copy">
-          <div class="status-pill">
-            <span class="status-dot" aria-hidden="true"></span>
-            <span data-copy="en">Phase 6 internal preview</span>
-            <span data-copy="zh">Phase 6 內部試用</span>
-          </div>
-
-          <p class="eyebrow">
-            <span data-copy="en">Your AI companion, visibly present</span>
-            <span data-copy="zh">讓 AI 對話真正擁有存在感</span>
-          </p>
-          <h1>
-            <span data-copy="en">Give ChatGPT a face you choose.</span>
-            <span data-copy="zh">讓你的 ChatGPT，有一張你選擇的臉。</span>
-          </h1>
+          <p class="eyebrow"><span data-copy="en">Your AI companion, visibly present</span><span data-copy="zh">讓 AI 對話真正擁有存在感</span></p>
+          <h1><span data-copy="en">Give ChatGPT a face you choose.</span><span data-copy="zh">讓你的 ChatGPT，有一張你選擇的臉。</span></h1>
           <p class="hero-lede">
-            <span data-copy="en">
-              AI FACE is a local-first Chrome extension that places a character
-              beside your ChatGPT conversation. Choose a bundled persona,
-              import your own image, move it, resize it, and let it react to
-              ChatGPT audio—without an API key or a new chatbot.
-            </span>
-            <span data-copy="zh">
-              AI FACE 是本機優先的 Chrome 擴充功能，讓角色陪在 ChatGPT
-              對話旁。選擇內建角色、匯入自己的圖片、移動與縮放，並讓角色跟隨
-              ChatGPT 聲音反應；不需要 API Key，也不會建立另一個聊天機器人。
-            </span>
+            <span data-copy="en">Choose a character, place it beside ChatGPT, and let it react to ChatGPT audio. No API key, account, or image upload required.</span>
+            <span data-copy="zh">選一個角色放在 ChatGPT 旁，讓它跟著 ChatGPT 的聲音產生反應。不需要 API Key、會員帳號，也不必上傳圖片。</span>
           </p>
-
           <div class="hero-actions">
-            <a class="button button-primary" href="#start">
-              <span data-copy="en">See how to try it</span>
-              <span data-copy="zh">查看試用方式</span>
-            </a>
-            <a
-              class="button button-secondary"
-              href="https://github.com/page5888/AI-FACE-Personas"
-            >
-              <span data-copy="en">Explore the community repo</span>
-              <span data-copy="zh">瀏覽社群角色庫</span>
-            </a>
+            <a class="button button-primary" href="./downloads/AI-FACE-Preview.zip" download><span data-copy="en">Download AI FACE</span><span data-copy="zh">下載 AI FACE</span></a>
+            <a class="button button-secondary" href="#start"><span data-copy="en">How to install</span><span data-copy="zh">查看安裝方式</span></a>
           </div>
-
-          <p class="release-note">
-            <span data-copy="en">
-              Public one-click installation is not available yet. The Chrome
-              Web Store release is still planned.
-            </span>
-            <span data-copy="zh">
-              目前尚未提供公開一鍵安裝；Chrome Web Store 版本仍在規劃中。
-            </span>
-          </p>
+          <p class="release-note"><span data-copy="en">Free for Google Chrome. Installation currently uses Developer mode.</span><span data-copy="zh">免費提供 Chrome 使用，目前需透過開發人員模式安裝。</span></p>
         </div>
-
         <div class="companion-stage" aria-hidden="true">
-          <div class="signal signal-one"></div>
-          <div class="signal signal-two"></div>
-          <div class="face-orb">
-            <span class="face-eye face-eye-left"></span>
-            <span class="face-eye face-eye-right"></span>
-            <span class="face-mouth"></span>
-          </div>
-          <div class="feature-chip chip-local">Local-first</div>
-          <div class="feature-chip chip-voice">Voice-reactive</div>
-          <div class="feature-chip chip-api">No API key</div>
+          <div class="signal signal-one"></div><div class="signal signal-two"></div>
+          <div class="face-orb"><span class="face-eye face-eye-left"></span><span class="face-eye face-eye-right"></span><span class="face-mouth"></span></div>
+          <div class="feature-chip chip-local">Local-first</div><div class="feature-chip chip-voice">Voice-reactive</div><div class="feature-chip chip-api">No API key</div>
         </div>
       </section>
 
       <section class="trust-strip" aria-label="Product boundaries">
-        <div>
-          <strong data-copy="en">Local image processing</strong>
-          <strong data-copy="zh">圖片本機處理</strong>
-          <span data-copy="en">No active persona upload</span>
-          <span data-copy="zh">不主動上傳角色圖片</span>
-        </div>
-        <div>
-          <strong data-copy="en">ChatGPT stays ChatGPT</strong>
-          <strong data-copy="zh">保留原本的 ChatGPT</strong>
-          <span data-copy="en">No replacement chatbot</span>
-          <span data-copy="zh">不建立替代聊天機器人</span>
-        </div>
-        <div>
-          <strong data-copy="en">One narrow permission set</strong>
-          <strong data-copy="zh">權限保持克制</strong>
-          <span data-copy="en">No backend or account</span>
-          <span data-copy="zh">沒有後端或會員帳號</span>
-        </div>
-        <div>
-          <strong data-copy="en">Open community process</strong>
-          <strong data-copy="zh">公開可審查流程</strong>
-          <span data-copy="en">Rights review before publishing</span>
-          <span data-copy="zh">公開前先做權利審查</span>
-        </div>
-      </section>
-
-      <section class="section" id="projects">
-        <div class="section-heading">
-          <p class="eyebrow">
-            <span data-copy="en">Two projects, one clear boundary</span>
-            <span data-copy="zh">兩個專案，一條清楚邊界</span>
-          </p>
-          <h2>
-            <span data-copy="en">Product and community stay separate.</span>
-            <span data-copy="zh">產品能力與社群角色分開治理。</span>
-          </h2>
-          <p>
-            <span data-copy="en">
-              The extension remains small and local-first. Public character
-              packs live in a separate reviewed repository with visible history.
-            </span>
-            <span data-copy="zh">
-              擴充功能維持輕量與本機優先；公開角色包放在獨立、可追溯的審查倉庫。
-            </span>
-          </p>
-        </div>
-
-        <div class="project-grid">
-          <article class="project-card project-card-product">
-            <div class="project-number">01</div>
-            <p class="card-kicker">AI FACE</p>
-            <h3>
-              <span data-copy="en">The Chrome companion</span>
-              <span data-copy="zh">Chrome 角色陪伴層</span>
-            </h3>
-            <p>
-              <span data-copy="en">
-                The extension owns the ChatGPT overlay, bundled characters,
-                local import, audio response, layout controls, and
-                browser-managed always-on-top mode.
-              </span>
-              <span data-copy="zh">
-                負責 ChatGPT Overlay、內建角色、本機匯入、語音反應、版面控制與
-                瀏覽器管理的置頂模式。
-              </span>
-            </p>
-            <ul class="feature-list">
-              <li>
-                <span data-copy="en">Choose, move, resize, lock, and hide</span>
-                <span data-copy="zh">選擇、移動、縮放、鎖定與隱藏</span>
-              </li>
-              <li>
-                <span data-copy="en">Voice-reactive local animation</span>
-                <span data-copy="zh">本機語音反應動畫</span>
-              </li>
-              <li>
-                <span data-copy="en">Private personal image import</span>
-                <span data-copy="zh">私人的本機角色圖片匯入</span>
-              </li>
-            </ul>
-            <a
-              class="text-link"
-              href="https://github.com/page5888/AI-FACE"
-            >
-              <span data-copy="en">Development repository</span>
-              <span data-copy="zh">開發倉庫</span>
-              <span aria-hidden="true">↗</span>
-            </a>
-            <small>
-              <span data-copy="en">
-                Repository access may be limited during the internal preview.
-              </span>
-              <span data-copy="zh">內部試用期間，倉庫存取可能受到限制。</span>
-            </small>
-          </article>
-
-          <article class="project-card project-card-community">
-            <div class="project-number">02</div>
-            <p class="card-kicker">AI FACE PERSONAS</p>
-            <h3>
-              <span data-copy="en">The reviewed character library</span>
-              <span data-copy="zh">經審查的社群角色庫</span>
-            </h3>
-            <p>
-              <span data-copy="en">
-                The public repository owns pack rules, validation, licensing,
-                copyright review, community voting, and the accepted catalog
-                history.
-              </span>
-              <span data-copy="zh">
-                負責角色包規格、自動驗證、授權、版權審查、社群投票與正式目錄歷史。
-              </span>
-            </p>
-            <ul class="feature-list">
-              <li>
-                <span data-copy="en">Original characters only</span>
-                <span data-copy="zh">只接受原創角色</span>
-              </li>
-              <li>
-                <span data-copy="en">Automated and human review</span>
-                <span data-copy="zh">自動檢查加人工審查</span>
-              </li>
-              <li>
-                <span data-copy="en">Auditable GitHub contribution history</span>
-                <span data-copy="zh">GitHub 可追溯投稿紀錄</span>
-              </li>
-            </ul>
-            <a
-              class="text-link"
-              href="https://github.com/page5888/AI-FACE-Personas"
-            >
-              <span data-copy="en">Open the public repository</span>
-              <span data-copy="zh">開啟公開角色庫</span>
-              <span aria-hidden="true">↗</span>
-            </a>
-          </article>
-        </div>
+        <div><strong data-copy="en">Ready to use</strong><strong data-copy="zh">下載即可試用</strong><span data-copy="en">Characters included</span><span data-copy="zh">已內建角色</span></div>
+        <div><strong data-copy="en">Local-first</strong><strong data-copy="zh">本機優先</strong><span data-copy="en">No AI FACE backend</span><span data-copy="zh">不依賴 AI FACE 後端</span></div>
+        <div><strong data-copy="en">Voice-reactive</strong><strong data-copy="zh">跟隨語音反應</strong><span data-copy="en">You decide when it starts</span><span data-copy="zh">由你決定何時啟動</span></div>
+        <div><strong data-copy="en">Independent</strong><strong data-copy="zh">獨立產品</strong><span data-copy="en">Not an OpenAI product</span><span data-copy="zh">不是 OpenAI 官方產品</span></div>
       </section>
 
       <section class="section section-tinted" id="start">
         <div class="section-heading">
-          <p class="eyebrow">
-            <span data-copy="en">Start without surprises</span>
-            <span data-copy="zh">先看清楚，再開始試用</span>
-          </p>
-          <h2>
-            <span data-copy="en">What works now—and what is still coming.</span>
-            <span data-copy="zh">現在能做什麼，還有哪些尚未完成。</span>
-          </h2>
+          <p class="eyebrow"><span data-copy="en">Get started</span><span data-copy="zh">開始使用</span></p>
+          <h2><span data-copy="en">Download, extract, and open ChatGPT.</span><span data-copy="zh">下載、解壓縮，然後開啟 ChatGPT。</span></h2>
+          <p><span data-copy="en">No GitHub, Node.js, Terminal, or source build is required.</span><span data-copy="zh">不需要 GitHub、Node.js、終端機，也不用自己建置。</span></p>
         </div>
-
         <div class="status-columns">
-          <article class="status-card available-card">
-            <div class="status-label">
-              <span data-copy="en">Available in the internal trial</span>
-              <span data-copy="zh">內部試用目前可用</span>
+          <article class="status-card available-card install-card">
+            <div class="download-panel">
+              <div><strong><span data-copy="en">AI FACE for Chrome</span><span data-copy="zh">AI FACE Chrome 版</span></strong><p><span data-copy="en">Includes AI FACE and ready-to-use characters.</span><span data-copy="zh">已包含 AI FACE 與可直接使用的角色。</span></p></div>
+              <a class="button button-primary" href="./downloads/AI-FACE-Preview.zip" download><span data-copy="en">Download</span><span data-copy="zh">下載</span></a>
             </div>
-            <ol class="step-list">
-              <li>
-                <span class="step-index">1</span>
-                <div>
-                  <strong data-copy="en">Build and load the extension</strong>
-                  <strong data-copy="zh">建置並載入擴充功能</strong>
-                  <p data-copy="en">
-                    Developer-mode installation is currently required.
-                  </p>
-                  <p data-copy="zh">目前仍需使用 Chrome 開發人員模式。</p>
-                </div>
-              </li>
-              <li>
-                <span class="step-index">2</span>
-                <div>
-                  <strong data-copy="en">Open or refresh ChatGPT</strong>
-                  <strong data-copy="zh">開啟或重新整理 ChatGPT</strong>
-                  <p data-copy="en">
-                    A bundled character appears without requiring an import.
-                  </p>
-                  <p data-copy="zh">不必先匯入圖片，內建角色即可出現。</p>
-                </div>
-              </li>
-              <li>
-                <span class="step-index">3</span>
-                <div>
-                  <strong data-copy="en">Choose or import a character</strong>
-                  <strong data-copy="zh">選擇或匯入角色</strong>
-                  <p data-copy="en">
-                    Personal imports are validated, converted, and stored locally.
-                  </p>
-                  <p data-copy="zh">個人素材只在本機驗證、轉碼與保存。</p>
-                </div>
-              </li>
-              <li>
-                <span class="step-index">4</span>
-                <div>
-                  <strong data-copy="en">Optionally start voice sync</strong>
-                  <strong data-copy="zh">需要時主動啟動語音同步</strong>
-                  <p data-copy="en">
-                    Motion reacts to tab audio; it is not exact phoneme lip sync.
-                  </p>
-                  <p data-copy="zh">
-                    動作依分頁音訊反應，不是精準音素嘴型同步。
-                  </p>
-                </div>
-              </li>
+            <ol class="step-list install-steps">
+              <li data-install-step="1"><span class="step-index">1</span><div><strong data-copy="en">Download and extract</strong><strong data-copy="zh">下載並解壓縮</strong><p data-copy="en">Download the ZIP, then choose Extract All.</p><p data-copy="zh">下載 ZIP，然後選擇「解壓縮全部」。</p></div></li>
+              <li data-install-step="2"><span class="step-index">2</span><div><strong data-copy="en">Open Chrome extensions</strong><strong data-copy="zh">開啟 Chrome 擴充功能</strong><p><code>chrome://extensions</code></p></div></li>
+              <li data-install-step="3"><span class="step-index">3</span><div><strong data-copy="en">Load the extracted folder</strong><strong data-copy="zh">載入解壓縮後的資料夾</strong><p data-copy="en">Turn on Developer mode, select Load unpacked, then choose the folder containing manifest.json.</p><p data-copy="zh">開啟開發人員模式，選擇「載入未封裝項目」，再選取包含 manifest.json 的資料夾。</p></div></li>
+              <li data-install-step="4"><span class="step-index">4</span><div><strong data-copy="en">Open or refresh ChatGPT</strong><strong data-copy="zh">開啟或重新整理 ChatGPT</strong><p data-copy="en">Visit chatgpt.com. AI FACE appears automatically.</p><p data-copy="zh">前往 chatgpt.com，AI FACE 會自動出現。</p></div></li>
             </ol>
           </article>
-
           <article class="status-card planned-card">
-            <div class="status-label">
-              <span data-copy="en">Planned public path</span>
-              <span data-copy="zh">規劃中的公開流程</span>
-            </div>
-            <div class="planned-flow">
-              <span data-copy="en">Website</span>
-              <span data-copy="zh">官網</span>
-              <i aria-hidden="true">→</i>
-              <span>Chrome Web Store</span>
-              <i aria-hidden="true">→</i>
-              <span>ChatGPT</span>
-              <i aria-hidden="true">→</i>
-              <span data-copy="en">Choose a character</span>
-              <span data-copy="zh">選擇角色</span>
-            </div>
-            <p>
-              <span data-copy="en">
-                The goal is ordinary-user installation without GitHub, Node.js,
-                source checkout, or sprite-sheet knowledge. This public path is
-                not available yet.
-              </span>
-              <span data-copy="zh">
-                目標是讓一般使用者不必懂 GitHub、Node.js、原始碼或 Sprite
-                Sheet 就能安裝；這條公開流程目前尚未上線。
-              </span>
-            </p>
-            <div class="boundary-note">
-              <strong data-copy="en">Important limitation</strong>
-              <strong data-copy="zh">重要限制</strong>
-              <p>
-                <span data-copy="en">
-                  Always-on-top uses Chrome's Picture-in-Picture window. It is
-                  not a frameless, click-through native desktop pet.
-                </span>
-                <span data-copy="zh">
-                  置頂使用 Chrome 的 Picture-in-Picture 小窗，不是無框、滑鼠穿透
-                  的原生桌寵視窗。
-                </span>
-              </p>
-            </div>
+            <div class="status-label"><span data-copy="en">Why Developer mode?</span><span data-copy="zh">為什麼需要開發人員模式？</span></div>
+            <h3><span data-copy="en">AI FACE is not in the Chrome Web Store yet.</span><span data-copy="zh">AI FACE 尚未上架 Chrome Web Store。</span></h3>
+            <p><span data-copy="en">Until then, Chrome requires the Load unpacked step. After an update, reload AI FACE and refresh open ChatGPT tabs.</span><span data-copy="zh">上架前需要使用「載入未封裝項目」。更新後，請重新載入 AI FACE 並重新整理已開啟的 ChatGPT 分頁。</span></p>
+            <div class="install-help"><strong data-copy="en">If Chrome cannot find the manifest</strong><strong data-copy="zh">如果 Chrome 顯示找不到 Manifest</strong><p data-copy="en">Choose the inner folder that directly contains manifest.json.</p><p data-copy="zh">請改選裡面直接包含 manifest.json 的資料夾。</p></div>
           </article>
         </div>
       </section>
 
-      <section class="section" id="characters">
-        <div class="section-heading">
-          <p class="eyebrow">
-            <span data-copy="en">Characters without a mandatory cloud</span>
-            <span data-copy="zh">角色不必先上傳雲端</span>
-          </p>
-          <h2>
-            <span data-copy="en">Personal use stays local. Public packs are reviewed.</span>
-            <span data-copy="zh">個人使用留在本機，公開角色必須先審查。</span>
-          </h2>
+      <section class="section" id="features">
+        <div class="section-heading"><p class="eyebrow"><span data-copy="en">What it does</span><span data-copy="zh">主要功能</span></p><h2><span data-copy="en">A visible companion that stays under your control.</span><span data-copy="zh">讓角色出現在身邊，同時把控制權留給你。</span></h2></div>
+        <div class="privacy-grid">
+          <div><strong data-copy="en">Choose a character</strong><strong data-copy="zh">選擇角色</strong><p data-copy="en">Use a bundled character or import one image you have the right to use.</p><p data-copy="zh">直接使用內建角色，或匯入一張你有權使用的圖片。</p></div>
+          <div><strong data-copy="en">Move and resize</strong><strong data-copy="zh">移動與縮放</strong><p data-copy="en">Place the character where it feels comfortable and save the layout locally.</p><p data-copy="zh">把角色放到舒服的位置，版面會保存在本機。</p></div>
+          <div><strong data-copy="en">React to ChatGPT audio</strong><strong data-copy="zh">跟隨 ChatGPT 聲音</strong><p data-copy="en">Start voice sync when you want visual mouth and motion reactions.</p><p data-copy="zh">需要時再啟動語音同步，讓嘴型與動作跟隨聲音。</p></div>
+          <div><strong data-copy="en">Optional always on top</strong><strong data-copy="zh">可選擇置頂</strong><p data-copy="en">Use Chrome's picture-in-picture window to keep the character above other windows.</p><p data-copy="zh">使用 Chrome 子母畫面，讓角色顯示在其他視窗上方。</p></div>
         </div>
+      </section>
 
+      <section class="section section-tinted" id="characters">
+        <div class="section-heading"><p class="eyebrow"><span data-copy="en">Characters</span><span data-copy="zh">角色</span></p><h2><span data-copy="en">Start immediately, personalize later.</span><span data-copy="zh">先直接使用，以後再換成自己的角色。</span></h2></div>
         <div class="character-paths">
-          <article class="path-card">
-            <span class="path-icon" aria-hidden="true">01</span>
-            <h3>
-              <span data-copy="en">Bundled starters</span>
-              <span data-copy="zh">內建起始角色</span>
-            </h3>
-            <p>
-              <span data-copy="en">
-                The internal trial includes ready-to-use characters so a new
-                user can see AI FACE before preparing any artwork.
-              </span>
-              <span data-copy="zh">
-                內部試用提供可直接使用的角色，第一次開啟不必先準備圖片。
-              </span>
-            </p>
-          </article>
-          <article class="path-card">
-            <span class="path-icon" aria-hidden="true">02</span>
-            <h3>
-              <span data-copy="en">Your private character</span>
-              <span data-copy="zh">你的私人角色</span>
-            </h3>
-            <p>
-              <span data-copy="en">
-                Import an image you are allowed to use. AI FACE processes it in
-                the browser and saves it in Chrome local extension storage.
-              </span>
-              <span data-copy="zh">
-                匯入你有權使用的圖片；AI FACE 會在瀏覽器內處理，並保存於 Chrome
-                擴充功能本機儲存空間。
-              </span>
-            </p>
-          </article>
-          <article class="path-card catalog-card">
-            <span class="path-icon" aria-hidden="true">03</span>
-            <h3>
-              <span data-copy="en">Reviewed community catalog</span>
-              <span data-copy="zh">經審查的社群目錄</span>
-            </h3>
-            <p>
-              <span data-copy="en">
-                The public catalog intentionally starts empty. Only accepted
-                packs appear after technical, rights, safety, and visual review.
-              </span>
-              <span data-copy="zh">
-                公開目錄刻意從空白開始；只有通過技術、權利、安全與視覺審查的
-                角色才會出現。
-              </span>
-            </p>
-            <div class="empty-catalog">
-              <span class="empty-orb" aria-hidden="true"></span>
-              <span data-copy="en">No approved community personas yet</span>
-              <span data-copy="zh">目前尚無核准的社群角色</span>
-            </div>
-          </article>
+          <article class="path-card"><span class="path-icon" aria-hidden="true">01</span><h3><span data-copy="en">Bundled characters</span><span data-copy="zh">內建角色</span></h3><p data-copy="en">Ready-to-use faces and characters are included, so no image preparation is required.</p><p data-copy="zh">已包含可直接使用的臉與角色，不必先準備圖片。</p></article>
+          <article class="path-card"><span class="path-icon" aria-hidden="true">02</span><h3><span data-copy="en">Your own image</span><span data-copy="zh">自己的圖片</span></h3><p data-copy="en">Import an allowed PNG, JPEG, WebP, or supported sprite sheet. Processing stays local.</p><p data-copy="zh">匯入有權使用的 PNG、JPEG、WebP 或支援的動作表，處理都在本機完成。</p></article>
+          <article class="path-card catalog-card"><span class="path-icon" aria-hidden="true">03</span><h3><span data-copy="en">Community characters</span><span data-copy="zh">社群角色</span></h3><p data-copy="en">Original community characters can be reviewed and shared through the public catalog.</p><p data-copy="zh">原創社群角色可以透過公開目錄接受審查與分享。</p><a class="text-link" href="https://github.com/page5888/AI-FACE-Personas"><span data-copy="en">Open the character library</span><span data-copy="zh">前往角色庫</span><span aria-hidden="true">↗</span></a></article>
         </div>
-      </section>
-
-      <section class="section section-tinted" id="contribute">
-        <div class="section-heading">
-          <p class="eyebrow">
-            <span data-copy="en">A contribution path people can audit</span>
-            <span data-copy="zh">每一步都能被檢查的投稿流程</span>
-          </p>
-          <h2>
-            <span data-copy="en">Create, validate, review, vote, approve.</span>
-            <span data-copy="zh">製作、驗證、審查、投票、最終核准。</span>
-          </h2>
-          <p>
-            <span data-copy="en">
-              GitHub is required only when changing the public catalog. It is
-              not required to use AI FACE or import a personal character.
-            </span>
-            <span data-copy="zh">
-              只有改變公開角色庫才需要 GitHub；一般使用與本機匯入不需要。
-            </span>
-          </p>
-        </div>
-
-        <ol class="contribution-flow">
-          <li>
-            <span>1</span>
-            <strong data-copy="en">Create an original character</strong>
-            <strong data-copy="zh">建立原創角色</strong>
-          </li>
-          <li>
-            <span>2</span>
-            <strong data-copy="en">Prepare the three required files</strong>
-            <strong data-copy="zh">準備三個必要檔案</strong>
-          </li>
-          <li>
-            <span>3</span>
-            <strong data-copy="en">Run automated validation</strong>
-            <strong data-copy="zh">執行自動驗證</strong>
-          </li>
-          <li>
-            <span>4</span>
-            <strong data-copy="en">Open a pull request</strong>
-            <strong data-copy="zh">建立 Pull Request</strong>
-          </li>
-          <li>
-            <span>5</span>
-            <strong data-copy="en">Rights review and community vote</strong>
-            <strong data-copy="zh">權利審查與社群投票</strong>
-          </li>
-          <li>
-            <span>6</span>
-            <strong data-copy="en">Maintainer final approval</strong>
-            <strong data-copy="zh">維護者最終核准</strong>
-          </li>
-        </ol>
-
-        <div class="file-contract">
-          <div>
-            <p class="card-kicker">
-              <span data-copy="en">Current pack contract</span>
-              <span data-copy="zh">目前角色包合約</span>
-            </p>
-            <pre><code>personas/&lt;character-id&gt;/
-├── persona.json
-├── preview.png
-└── spritesheet.png</code></pre>
-          </div>
-          <div>
-            <h3>
-              <span data-copy="en">One transparent 4 × 6 sheet</span>
-              <span data-copy="zh">一張透明 4 × 6 動作表</span>
-            </h3>
-            <p>
-              <span data-copy="en">
-                The current community contract requires a transparent
-                1024 × 1536 PNG plus a preview and manifest. Source photos,
-                prompts, ZIP files, and unrelated assets are not accepted.
-              </span>
-              <span data-copy="zh">
-                目前社群規格要求透明 1024 × 1536 PNG、預覽圖與角色資料。
-                不接受原始照片、提示詞、ZIP 或其他無關素材。
-              </span>
-            </p>
-            <a
-              class="button button-secondary"
-              href="https://github.com/page5888/AI-FACE-Personas/blob/main/CONTRIBUTING.md"
-            >
-              <span data-copy="en">Read the contribution guide</span>
-              <span data-copy="zh">閱讀完整投稿規則</span>
-            </a>
-          </div>
-        </div>
-
-        <aside class="copyright-alert">
-          <div class="alert-mark" aria-hidden="true">!</div>
-          <div>
-            <h3>
-              <span data-copy="en">Do not upload copyrighted characters.</span>
-              <span data-copy="zh">請勿上傳有版權疑慮的角色。</span>
-            </h3>
-            <p>
-              <span data-copy="en">
-                Existing anime, games, movies, celebrities, brands, logos,
-                downloaded artwork, screenshots, fan art, and recognizable
-                lookalikes are rejected. AI-generated does not automatically
-                mean copyright-safe.
-              </span>
-              <span data-copy="zh">
-                既有動漫、遊戲、電影、名人、品牌、Logo、下載圖片、截圖、二創與
-                可辨識的近似角色一律拒絕。AI 生成不代表自動沒有版權問題。
-              </span>
-            </p>
-            <a
-              class="text-link"
-              href="https://github.com/page5888/AI-FACE-Personas/blob/main/COPYRIGHT.md"
-            >
-              <span data-copy="en">Read the copyright policy</span>
-              <span data-copy="zh">閱讀版權政策</span>
-              <span aria-hidden="true">↗</span>
-            </a>
-          </div>
-        </aside>
+        <aside class="copyright-alert"><div class="alert-mark" aria-hidden="true">!</div><div><h3><span data-copy="en">Upload only characters you have the right to share.</span><span data-copy="zh">只上傳你有權分享的角色。</span></h3><p data-copy="en">Do not submit copyrighted characters, celebrities, logos, downloaded art, fan art, or recognizable lookalikes.</p><p data-copy="zh">請勿投稿有版權的角色、名人、Logo、下載圖片、二創或可辨識的近似角色。</p><a class="text-link" href="https://github.com/page5888/AI-FACE-Personas/blob/main/CONTRIBUTING.md"><span data-copy="en">Contribution rules</span><span data-copy="zh">查看投稿規則</span><span aria-hidden="true">↗</span></a></div></aside>
       </section>
 
       <section class="section" id="privacy">
-        <div class="section-heading">
-          <p class="eyebrow">
-            <span data-copy="en">Honest privacy boundaries</span>
-            <span data-copy="zh">誠實說明隱私邊界</span>
-          </p>
-          <h2>
-            <span data-copy="en">Local-first does not mean invisible or encrypted.</span>
-            <span data-copy="zh">本機優先，不等於隱形或加密保險箱。</span>
-          </h2>
-        </div>
+        <div class="section-heading"><p class="eyebrow"><span data-copy="en">Privacy</span><span data-copy="zh">隱私</span></p><h2><span data-copy="en">Your character and settings stay on this Chrome profile.</span><span data-copy="zh">角色與設定保存在目前的 Chrome Profile。</span></h2></div>
         <div class="privacy-grid">
-          <div>
-            <strong data-copy="en">AI FACE does not actively upload persona images.</strong>
-            <strong data-copy="zh">AI FACE 不主動上傳角色圖片。</strong>
-            <p data-copy="en">
-              Personal images are validated, converted, and stored in
-              chrome.storage.local.
-            </p>
-            <p data-copy="zh">
-              個人圖片在本機驗證、轉碼並保存於 chrome.storage.local。
-            </p>
-          </div>
-          <div>
-            <strong data-copy="en">Storage is local, not encrypted.</strong>
-            <strong data-copy="zh">儲存是本機的，但沒有加密。</strong>
-            <p data-copy="en">
-              Other software with local access may still reach browser profile data.
-            </p>
-            <p data-copy="zh">可存取本機的其他軟體仍可能接觸瀏覽器資料。</p>
-          </div>
-          <div>
-            <strong data-copy="en">Rendered pixels can still be captured.</strong>
-            <strong data-copy="zh">畫面上的角色仍可能被擷取。</strong>
-            <p data-copy="en">
-              Origin isolation protects frame DOM access; it is not screenshot protection.
-            </p>
-            <p data-copy="zh">
-              來源隔離保護 iframe DOM，不代表可以防止截圖或錄影。
-            </p>
-          </div>
-          <div>
-            <strong data-copy="en">No conversation reading.</strong>
-            <strong data-copy="zh">不讀取對話內容。</strong>
-            <p data-copy="en">
-              Audio response uses bounded tab-audio features, not transcription.
-            </p>
-            <p data-copy="zh">
-              語音反應使用有界的分頁音訊特徵，不做轉錄或內容辨識。
-            </p>
-          </div>
+          <div><strong data-copy="en">No conversation reading</strong><strong data-copy="zh">不讀取對話內容</strong><p data-copy="en">AI FACE does not read prompts, replies, or account credentials.</p><p data-copy="zh">AI FACE 不讀取提示詞、回覆或帳號憑證。</p></div>
+          <div><strong data-copy="en">No active image upload</strong><strong data-copy="zh">不主動上傳圖片</strong><p data-copy="en">Personal images are validated, converted, and stored locally.</p><p data-copy="zh">個人圖片只在本機驗證、轉碼與保存。</p></div>
+          <div><strong data-copy="en">Voice sync is opt-in</strong><strong data-copy="zh">語音同步由你啟動</strong><p data-copy="en">Tab audio is analyzed locally for visual reactions and is not transcribed or saved by AI FACE.</p><p data-copy="zh">分頁聲音只在本機分析視覺反應，AI FACE 不轉錄也不保存音訊。</p></div>
+          <div><strong data-copy="en">Local does not mean encrypted</strong><strong data-copy="zh">本機不代表已加密</strong><p data-copy="en">Chrome local storage and rendered pixels may still be accessible on your device.</p><p data-copy="zh">Chrome 本機儲存與畫面像素仍可能在你的裝置上被存取。</p></div>
+        </div>
+        <div class="section-actions">
+          <a class="button button-secondary" href="./privacy/"><span data-copy="en">Read the privacy policy</span><span data-copy="zh">閱讀隱私政策</span></a>
+          <a class="button button-secondary" href="./support/"><span data-copy="en">Support AI FACE</span><span data-copy="zh">支持 AI FACE</span></a>
         </div>
       </section>
 
       <section class="section faq-section" id="faq">
-        <div class="section-heading">
-          <p class="eyebrow">FAQ</p>
-          <h2>
-            <span data-copy="en">The short answers.</span>
-            <span data-copy="zh">你可能會先問的事。</span>
-          </h2>
-        </div>
+        <div class="section-heading"><p class="eyebrow">FAQ</p></div>
         <div class="faq-list">
-          <details>
-            <summary>
-              <span data-copy="en">Is AI FACE an OpenAI product?</span>
-              <span data-copy="zh">AI FACE 是 OpenAI 官方產品嗎？</span>
-            </summary>
-            <p data-copy="en">
-              No. AI FACE is an independent third-party project and is not
-              affiliated with or endorsed by OpenAI.
-            </p>
-            <p data-copy="zh">
-              不是。AI FACE 是獨立第三方專案，與 OpenAI 無隸屬或官方背書關係。
-            </p>
-          </details>
-          <details>
-            <summary>
-              <span data-copy="en">Do I need an OpenAI API key?</span>
-              <span data-copy="zh">需要 OpenAI API Key 嗎？</span>
-            </summary>
-            <p data-copy="en">
-              No. AI FACE works beside the ChatGPT website and does not call a
-              model API.
-            </p>
-            <p data-copy="zh">
-              不需要。AI FACE 在 ChatGPT 網頁旁運作，不呼叫模型 API。
-            </p>
-          </details>
-          <details>
-            <summary>
-              <span data-copy="en">Can I install it from the Chrome Web Store?</span>
-              <span data-copy="zh">現在可以從 Chrome Web Store 安裝嗎？</span>
-            </summary>
-            <p data-copy="en">
-              Not yet. The current Phase 6 build is an internal developer-mode trial.
-            </p>
-            <p data-copy="zh">
-              還不行。目前 Phase 6 是需要開發人員模式的內部試用版。
-            </p>
-          </details>
-          <details>
-            <summary>
-              <span data-copy="en">Does community voting prove copyright ownership?</span>
-              <span data-copy="zh">社群投票能證明投稿者有版權嗎？</span>
-            </summary>
-            <p data-copy="en">
-              No. Voting measures community interest. Rights, safety, and final
-              maintainer review remain mandatory.
-            </p>
-            <p data-copy="zh">
-              不能。投票只衡量社群興趣；權利、安全與維護者最終審查仍是必要門檻。
-            </p>
-          </details>
+          <details><summary><span data-copy="en">Is AI FACE an OpenAI product?</span><span data-copy="zh">AI FACE 是 OpenAI 官方產品嗎？</span></summary><p data-copy="en">No. AI FACE is an independent third-party project and is not affiliated with or endorsed by OpenAI.</p><p data-copy="zh">不是。AI FACE 是獨立第三方專案，與 OpenAI 無隸屬或官方背書關係。</p></details>
+          <details><summary><span data-copy="en">Do I need an OpenAI API key?</span><span data-copy="zh">需要 OpenAI API Key 嗎？</span></summary><p data-copy="en">No. AI FACE works beside ChatGPT and does not call a model API.</p><p data-copy="zh">不需要。AI FACE 在 ChatGPT 旁運作，不呼叫模型 API。</p></details>
+          <details><summary><span data-copy="en">Is it in the Chrome Web Store?</span><span data-copy="zh">已經上架 Chrome Web Store 嗎？</span></summary><p data-copy="en">Not yet. Use the download and Load unpacked steps above.</p><p data-copy="zh">還沒有。請依照上方流程下載並載入未封裝項目。</p></details>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div>
-        <a class="brand" href="#top">
-          <img src="./assets/ai-face.png" alt="" width="36" height="36" />
-          <span>AI FACE</span>
-        </a>
-        <p>
-          <span data-copy="en">Give AI a presence—without taking away your control.</span>
-          <span data-copy="zh">讓 AI 擁有存在感，同時把控制權留給使用者。</span>
-        </p>
-      </div>
+      <div><a class="brand" href="#top"><img src="./assets/ai-face.png" alt="" width="36" height="36" /><span>AI FACE</span></a><p><span data-copy="en">Give AI a presence—without taking away your control.</span><span data-copy="zh">讓 AI 擁有存在感，同時把控制權留給使用者。</span></p></div>
       <div class="footer-links">
-        <a href="https://github.com/page5888/AI-FACE">AI FACE</a>
         <a href="https://github.com/page5888/AI-FACE-Personas">Personas</a>
-        <a
-          href="https://github.com/page5888/AI-FACE-Personas/blob/main/docs/USER-FLOWS.md"
-        >
-          <span data-copy="en">Full flows</span>
-          <span data-copy="zh">完整流程</span>
-        </a>
-        <a
-          href="https://github.com/page5888/AI-FACE-Personas/issues/new/choose"
-        >
-          <span data-copy="en">Report an issue</span>
-          <span data-copy="zh">回報問題</span>
-        </a>
+        <a href="./privacy/"><span data-copy="en">Privacy</span><span data-copy="zh">隱私</span></a>
+        <a href="./support/"><span data-copy="en">Support</span><span data-copy="zh">支持</span></a>
+        <a href="https://github.com/page5888/AI-FACE-Personas/issues/new/choose"><span data-copy="en">Report an issue</span><span data-copy="zh">回報問題</span></a>
       </div>
-      <p class="footer-disclaimer">
-        <span data-copy="en">
-          Independent third-party project. Not affiliated with or endorsed by OpenAI.
-        </span>
-        <span data-copy="zh">
-          獨立第三方專案，與 OpenAI 無隸屬或官方背書關係。
-        </span>
-      </p>
+      <p class="footer-disclaimer"><span data-copy="en">Independent third-party project. Not affiliated with or endorsed by OpenAI.</span><span data-copy="zh">獨立第三方專案，與 OpenAI 無隸屬或官方背書關係。</span></p>
     </footer>
   </body>
 </html>

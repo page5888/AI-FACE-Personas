@@ -663,6 +663,55 @@ html[data-language="zh"] .section-heading h2 {
   color: #8794a9;
 }
 
+.download-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid rgba(96, 225, 255, 0.24);
+  border-radius: 1rem;
+  background: linear-gradient(135deg, rgba(96, 225, 255, 0.08), rgba(154, 96, 255, 0.08));
+}
+
+.download-panel strong {
+  display: block;
+  font-size: 1.05rem;
+}
+
+.download-panel p {
+  margin: 0.3rem 0 0;
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
+.download-panel .button {
+  white-space: nowrap;
+}
+
+.install-steps code {
+  color: #d9f8ff;
+  word-break: break-word;
+}
+
+.planned-card h3 {
+  margin: 0;
+}
+
+.install-help {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.85rem;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.install-help p {
+  margin: 0.45rem 0 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
 .status-columns {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
@@ -1166,6 +1215,10 @@ html[data-language="zh"] .section-heading h2 {
     width: 100%;
   }
 
+  .download-panel {
+    grid-template-columns: 1fr;
+  }
+
   .companion-stage {
     min-height: 390px;
   }
@@ -1259,5 +1312,100 @@ html[data-language="zh"] .section-heading h2 {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+.section-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.policy-header {
+  position: static;
+}
+
+.policy-shell {
+  width: min(880px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+
+.policy-shell > h1 {
+  max-width: 780px;
+  margin: 0 0 1rem;
+  font-size: clamp(2.35rem, 7vw, 5rem);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+}
+
+.policy-shell > h1 span {
+  color: var(--muted);
+  font-size: 0.58em;
+}
+
+.policy-effective {
+  margin: 0 0 2rem;
+  color: var(--muted);
+}
+
+.policy-card {
+  margin-top: 1rem;
+  padding: clamp(1.25rem, 4vw, 2rem);
+  border: 1px solid var(--border);
+  border-radius: 1.2rem;
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.policy-card h2 {
+  margin: 0 0 1rem;
+  font-size: clamp(1.2rem, 3vw, 1.65rem);
+}
+
+.policy-card p,
+.policy-card li {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.policy-card code {
+  color: #d9f8ff;
+}
+
+.policy-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.policy-grid > div {
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.85rem;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.policy-grid p {
+  margin-bottom: 0;
+}
+
+.wallet-address {
+  display: block;
+  padding: 1rem;
+  border: 1px solid rgba(96, 225, 255, 0.24);
+  border-radius: 0.85rem;
+  background: rgba(96, 225, 255, 0.07);
+  overflow-wrap: anywhere;
+  user-select: all;
+}
+
+@media (max-width: 640px) {
+  .policy-shell {
+    padding: 3rem 0;
+  }
+
+  .policy-grid {
+    grid-template-columns: 1fr;
   }
 }

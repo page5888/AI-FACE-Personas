@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="AI FACE privacy policy and local data handling disclosure." />
+    <meta name="theme-color" content="#070a12" />
+    <title>AI FACE — Privacy Policy / 隱私政策</title>
+    <link rel="icon" href="../assets/ai-face.png" />
+    <link rel="stylesheet" href="../assets/site.css" />
+  </head>
+  <body>
+    <header class="site-header policy-header">
+      <a class="brand" href="../"><img src="../assets/ai-face.png" alt="" width="42" height="42" /><span>AI FACE</span></a>
+      <a class="button button-secondary" href="../">返回首頁 · Home</a>
+    </header>
+    <main class="policy-shell" id="main">
+      <p class="eyebrow">Privacy Policy / 隱私政策</p>
+      <h1>本機優先，但不誇大安全邊界。<br /><span>Local-first, with honest limits.</span></h1>
+      <p class="policy-effective">Effective date / 生效日期：2026-08-05</p>
+
+      <section class="policy-card">
+        <h2>摘要 / Summary</h2>
+        <ul>
+          <li>AI FACE 沒有會員、Analytics、廣告、雲端同步或角色圖片後端。 / AI FACE has no account, analytics, advertising, cloud sync, or persona-image backend.</li>
+          <li>不讀取或保存 ChatGPT 對話文字與登入憑證。 / It does not read or store ChatGPT conversation text or credentials.</li>
+          <li>角色、顏色與版面設定保存在目前 Chrome Profile。 / Personas, colors, and layout preferences stay in the current Chrome profile.</li>
+          <li>語音同步必須由使用者啟動；音訊只在本機分析，不轉錄、不保存、不上傳。 / Voice sync is user-started and analyzed locally without transcription, storage, or upload.</li>
+        </ul>
+      </section>
+
+      <section class="policy-card">
+        <h2>本機設定與角色圖片 / Local settings and persona images</h2>
+        <p>AI FACE 使用 <code>chrome.storage.local</code> 保存角色位置、尺寸、鎖定狀態、顯示狀態、角色選擇、支援的顏色設定，以及一個標準化自訂角色。</p>
+        <p>AI FACE uses <code>chrome.storage.local</code> for position, size, lock and visibility state, persona selection, supported color settings, and one normalized custom persona.</p>
+        <p>匯入圖片會在瀏覽器內驗證、解碼、標準化並重新編碼。原始檔名與來源 metadata 不會被刻意保存，圖片也不會被主動上傳到 AI FACE 或第三方伺服器。</p>
+        <p>Imported images are validated, decoded, normalized, and re-encoded in the browser. Original filenames and source metadata are not intentionally saved, and images are not actively uploaded to AI FACE or third-party servers.</p>
+      </section>
+
+      <section class="policy-card">
+        <h2>分頁音訊 / Tab audio</h2>
+        <p>只有在使用者點選「開始語音同步」後，Chrome 才會擷取目前作用中的 ChatGPT 分頁音訊。AI FACE 會維持正常聲音輸出，並用另一條本機分析支線產生短暫的音量、頻段、起音與有限嘴型權重。</p>
+        <p>Chrome captures the active ChatGPT tab only after the user selects Start voice sync. AI FACE keeps the audio audible and uses a separate local analysis branch for short-lived amplitude, frequency-band, onset, and bounded mouth-shape values.</p>
+        <p>原始音訊不進入 extension storage，不進行語音轉文字，也不會由 AI FACE 錄製或上傳。分頁中的任何聲音都可能觸發視覺反應；重新載入瀏覽器或插件後不會偷偷恢復擷取。</p>
+        <p>Raw audio does not enter extension storage, is not transcribed, and is not recorded or uploaded by AI FACE. Any audio in the captured tab may trigger visual reactions, and capture does not silently restart after reload.</p>
+      </section>
+
+      <section class="policy-card">
+        <h2>網站存取與權限 / Site access and permissions</h2>
+        <div class="policy-grid">
+          <div><strong>storage</strong><p>在本機保存版面、角色與設定。 / Saves layout, personas, and preferences locally.</p></div>
+          <div><strong>tabCapture</strong><p>在使用者啟動後分析目前 ChatGPT 分頁聲音。 / Analyzes the current ChatGPT tab after user action.</p></div>
+          <div><strong>offscreen</strong><p>Popup 關閉後維持本機音訊圖。 / Keeps the local audio graph active after the popup closes.</p></div>
+          <div><strong>chatgpt.com</strong><p>只在支援的 ChatGPT 頁面掛載角色。 / Mounts the character only on supported ChatGPT pages.</p></div>
+        </div>
+        <p>目前不申請 <code>&lt;all_urls&gt;</code>、<code>host_permissions</code>、<code>tabs</code>、<code>activeTab</code>、麥克風、相機或定位權限。</p>
+        <p>The extension currently requests no <code>&lt;all_urls&gt;</code>, <code>host_permissions</code>, <code>tabs</code>, <code>activeTab</code>, microphone, camera, or geolocation permission.</p>
+      </section>
+
+      <section class="policy-card">
+        <h2>網路、刪除與安全限制 / Network, deletion, and security limits</h2>
+        <p>插件內的官網、角色庫、隱私與支持連結只有在使用者點擊後才會開啟。公開網站由 GitHub Pages 提供，GitHub 可能依其政策處理一般網站請求資訊。</p>
+        <p>Website, catalog, privacy, and support links open only after a user click. The public site is hosted by GitHub Pages, which may process ordinary web-request information under its own policy.</p>
+        <p>使用「移除目前圖片」可刪除自訂角色；清除插件儲存或解除安裝，可移除目前 Chrome Profile 中的本機記錄，仍受 Chrome 與裝置備份行為影響。</p>
+        <p>Remove current image deletes the custom persona. Clearing extension storage or uninstalling removes local records from the current Chrome profile, subject to Chrome and device-backup behavior.</p>
+        <p><code>chrome.storage.local</code> 不是端到端加密保險箱。畫面仍可能被截圖、錄影、螢幕分享或具有本機權限的其他軟體取得。沒有任何軟體能承諾絕對安全。</p>
+        <p><code>chrome.storage.local</code> is not an end-to-end encrypted vault. Rendered pixels may still be captured by screenshots, screen sharing, recording, or other software with local access. No software can promise absolute security.</p>
+      </section>
+
+      <section class="policy-card">
+        <h2>聯絡與政策變更 / Contact and changes</h2>
+        <p>若未來新增會員、雲端、Analytics、遠端推論或不同資料處理方式，必須先更新本政策並清楚揭露。問題可透過公開 Issue 回報，但請勿貼出私鑰、助記詞、登入憑證、私人圖片或敏感對話。</p>
+        <p>If AI FACE later adds accounts, cloud services, analytics, remote inference, or materially different data handling, this policy must be updated first. Questions may be reported through a public issue, but never post private keys, recovery phrases, credentials, private images, or sensitive conversations.</p>
+        <a class="button button-secondary" href="https://github.com/page5888/AI-FACE-Personas/issues/new/choose">回報問題 · Report an issue</a>
+      </section>
+      <p class="footer-disclaimer">AI FACE 是獨立第三方專案，與 OpenAI 無隸屬或官方背書關係。 / AI FACE is an independent third-party project and is not affiliated with or endorsed by OpenAI.</p>
+    </main>
+  </body>
+</html>
